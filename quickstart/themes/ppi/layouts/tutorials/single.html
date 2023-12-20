@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+
+	<section class="container-fluid">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+					<div class="ppp-col-standard">
+						
+			
+								<h1 class="medium-h1">{{ .Title }}</h1>
+								<div class="pt-3 social-snippet">
+									{{ .Params.snippet }}
+								</div>	
+				
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>	
+
+	<section class="container-fluid backgrounded background-primary">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+
+						<script src="https://gist.github.com/{{ .Params.gist_id}}.js"></script>
+   	
+		<p>Sorry, to view the Tutorials you must <a href='/#gdpr_cookie_modal'>enable third party cookies</a>, as the Tutorials are embedded notebooks hosted on GitHub.<br/><br/> Alternatively, you can view the tutorials directly on <a href='https://gist.github.com/oguerrer' target='_blank'>GitHub</a>. 
+		
+	<?php } ?>
+						
+					
+				</div>
+			</div>
+		</div>
+	</section>
+  
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}
