@@ -104,9 +104,10 @@ $container-max-widths: (
 @media screen and (min-width:768px){
 
 	body {
-	  font-size:16px!important;
+	  font-size:15px!important;
 	}
 }
+
 
 // ACCESSIBILITY
 
@@ -305,6 +306,7 @@ $container-max-widths: (
 
 		p{
 			margin-top:0px;
+			line-height: 1.45;
 		}
 
 		ol{
@@ -1022,6 +1024,7 @@ $container-max-widths: (
 		article *{
 			color:black;
 			font-weight:400;
+			word-break:break-word;
 		}		
 		article h3{
 			font-size: 1.75rem;

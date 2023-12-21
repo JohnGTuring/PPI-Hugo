@@ -1,6 +1,30 @@
 {{ define "main" }}
 
+<script>
 
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+	
+	var cookie = readCookie('consent-settings');
+
+
+	if(!cookie){
+		window.location.href = '/pages/github'; 
+	}else if(cookie[1] < 1){
+		window.location.href = '/pages/github'; 
+	}
+
+
+
+</script>
 	<section class="container-fluid">
 		<div class="container-xl">
 			<div class="row">
@@ -24,11 +48,9 @@
 			<div class="row">
 				<div class="ppp-col-12">
 
-						<script src="https://gist.github.com/{{ .Params.gist_id}}.js"></script>
-   	
-		<p>Sorry, to view the Tutorials you must <a href='/#gdpr_cookie_modal'>enable third party cookies</a>, as the Tutorials are embedded notebooks hosted on GitHub.<br/><br/> Alternatively, you can view the tutorials directly on <a href='https://gist.github.com/oguerrer' target='_blank'>GitHub</a>. 
-		
-	<?php } ?>
+						
+					<script src="https://gist.github.com/{{ .Params.gist_id}}.js"></script>
+	
 						
 					
 				</div>
