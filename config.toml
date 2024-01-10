@@ -1,0 +1,6 @@
+timeout = 30000
+enableInlineShortcodes = true
+
+[taxonomies]
+publication_type = "publication_type"
+video_language = "video_language"
