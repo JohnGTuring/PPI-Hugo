@@ -1,16 +1,15 @@
 +++
-title = 'SDG Alignment and Budget Tagging: Towards an SDG Taxonomy'
-url = "jointsdgfund.org/sites/default/files/2022-04/SDG%20Aligment%20and%20Budget%20Tagging%20Methodology%20%282022.03.31%29.pdf"
-citation = "Palacios, L., Quiroga, D., Romero, O., &amp; Ruiz, M. (2022). SDG Alignment and Budget Tagging: Towards an SDG Taxonomy (p. 60) [Tools and Guidelines]. UNDP Colombia."
+title = 'Los Objetivos del Desarrollo Sostenible en Bogotá D.C. Un Análisis sobre las Asignaciones Presupuestales y su Impacto en los Indicadores del Desarrollo'
+url = "www.undp.org/sites/g/files/zskgke326/files/2023-01/undp_co_pub_DD_Reporte_IPP_Bogotaa_ene2023.pdf"
+citation = "Castañeda, G., & Guerrero, A. (2022). Los Objetivos del Desarrollo Sostenible en Bogotá D.C. Un Análisis sobre las Asignaciones Presupuestales y su Impacto en los Indicadores del Desarrollo (Documento de Desarrollo No. 004–2022). United Nations Development Programme."
 year = ['2022']
 subscription_required = false
 publication_type = "policy_report"
 language = ['English']
 
 
-date = 2023-01-15T09:00:00-07:00
+date = 2023-01-30
 draft = false
-tags = ['red']
 +++
 
-As part of the Decade of Action (2020-2030), the United Nations system began im- plementing the global initiative to strengthen national financing frameworks for the SDGs, known as Integrated National Financing Frameworks or INFF. A significant part of the analysis of all sources of financing for the SDGs is the public budget. This document presents guidelines for (i) aligning public budgets (and development coo- peration) to the SDGs, and (ii) presents relevant inputs for developing local SDG ta- xonomies to explore public budget and private sector contribution to SDG Financing. The guidelines are presented in a step-by-step way to aid users in tailoring to local circumstances the analysis of SDG Financing and are based on the implementation of SDG budget tagging by the INFF-Colombia Joint Program.
+En este reporte se realiza un análisis de la presupuestación de los ODS para Bogotá D.C. a partir de una metodología novedosa, la Inferencia de Prioridades de Política (IPP), y de un modelo computacional basado en agentes. Desde el punto de vista teórico, el modelo plantea el problema de presupuestación que existe entre la autoridad central, que distribuye los recursos públicos, y los distintos servidores públicos, que tienen el mandato de usarlos con el fin de mejorar el desempeño de los indicadores. En esta formulación se plantea que los objetivos de los servidores no necesariamente coinciden con los de la autoridad central, lo que da lugar a un problema de economía política, al dispendio de recursos, y a la necesidad de implementar mecanismos de gobernanza.

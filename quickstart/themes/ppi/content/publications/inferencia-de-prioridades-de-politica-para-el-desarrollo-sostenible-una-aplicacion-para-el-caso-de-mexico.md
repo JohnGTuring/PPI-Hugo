@@ -8,9 +8,8 @@ publication_type = "policy_report"
 language = ['Spanish']
 
 
-date = 2023-01-15T09:00:00-07:00
+date = 2023-01-24
 draft = false
-tags = ['red']
 +++
 
 El segundo documento es una aplicación para el caso de México. En éste, se describen los indicadores utilizados y se muestran los resultados de los análisis retrospectivo y prospectivo. En cuanto al análisis retrospectivo, se da cuenta de las prioridades inferidas a nivel federal. Prospectivamente, se evalúan diferentes modos de desarrollo. Por ejemplo, se evalúa la factibilidad de que México alcance los modos de desarrollo de cada uno de los países que integran la Organización para la Cooperación y el Desarrollo Económicos (OCDE). Es decir, utilizando los valores de los indicadores de los países de la OCDE como metas, se evalúa qué tan factible y en cuánto tiempo México podría alcanzarlos. Adicionalmente, se lleva a cabo un análisis de aceleradores, en donde se recomienda priorizar nodos con efectos multiplicadores positivos en las diferentes dimensiones del desarrollo.

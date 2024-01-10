@@ -8,9 +8,9 @@ publication_type = "Dissemination"
 language = ['spanish']
 
 
-date = 2023-01-15T09:00:00-07:00
+date = 2023-01-27
 draft = false
-tags = ['red']
+
 +++
 
 Desde su establecimiento en 2015, los Objetivos de Desarrollo Sostenible (ODS) se han convertido en la agenda internacional lí­der para promover el desarrollo social, económico y ambiental. La Agenda 2030 ha fomentado la construcción de numerosos indicadores de desarrollo a través de los cuales los gobiernos pueden evaluar y darle seguimiento al progreso hacia los ODS.

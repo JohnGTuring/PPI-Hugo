@@ -8,9 +8,9 @@ publication_type = "policy_report"
 language = ['Spanish']
 
 
-date = 2023-01-15T09:00:00-07:00
+date = 2023-01-21
 draft = false
-tags = ['red']
+
 +++
 
 En el Reporte metodológico, primero de la serie, se describe el tratamiento que se hace de los datos para su uso en el modelo, las ecuaciones del juego conductual de economía política y los algoritmos del modelo. Asimismo, se describe a detalle el modelaje del comportamiento de la burocracia y de los incentivos que enfrentan la autoridad central y el funcionariado implementador de programas.

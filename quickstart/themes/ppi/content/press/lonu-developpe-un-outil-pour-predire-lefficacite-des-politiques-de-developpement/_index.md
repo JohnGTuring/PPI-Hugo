@@ -5,4 +5,5 @@ url = "www.presse-citron.net/lonu-developpe-un-outil-pour-predire-lefficacite-de
 media_source = "Presse Citron"
 language = "fr"
 year = "2020"
+date = "2023-08-21"
 +++

@@ -29,6 +29,9 @@ Policy Priority Inference (PPI) is a research programme that emerged in 2018 fro
 
 
 PPI aims at modelling the causal link between government expenditure and policy outcomes while accounting for the multidimensionality and complexity of development. It employs computational methods to overcome the limitations of coarse-grained data on development indicators and public spending. One of PPI’s main outputs is an analytic tool that helps governments measure the impact of public expenditure on development outcomes. It supports evidence-based decision-making in an environment characterised by budget constraints, concurrent and competing targets, multidimensional development, imperfect governance, and context-specific interdependencies between policy issues. This tool uses a specific type of artificial intelligence called agent computing (or agent-based modelling), which allows modelling socioeconomic agents and their decision- making processes, providing a transparent alternative to black-box approaches. The PPI toolkit has been deployed in various countries through collaborations with multilateral organisations and governments (national and subnational) to support development planning and ex ante evaluation in multidimensional settings. You can find academic and policy publications associated with these applications in the publications section of this website.
+
+{{% youtube id="shMhykSu72M" %}}
+
 {{% /backgrounded-section %}}
 
 {{% backgrounded-section class="inner-background-white" %}}

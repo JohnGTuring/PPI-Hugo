@@ -5,4 +5,5 @@ url = "www.publico.pt/2020/06/03/tecnologia/noticia/onu-quer-usar-inteligencia-a
 media_source = "Público"
 language = "pt"
 year = "2020"
+date = "2023-08-23"
 +++

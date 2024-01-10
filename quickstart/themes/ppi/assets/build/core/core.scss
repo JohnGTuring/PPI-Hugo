@@ -829,7 +829,7 @@ $container-max-widths: (
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.4%;
 }
 
 .youtube.iframe-container iframe {
@@ -951,7 +951,8 @@ $container-max-widths: (
 			margin-bottom:var(--half);
 		
 			.accordion-row-text{
-				padding-bottom:40px;
+				padding-bottom: var(--vertical-gutter-padding)!important;			
+
 			}
 			.box-button-container{
 			    bottom: 60px;

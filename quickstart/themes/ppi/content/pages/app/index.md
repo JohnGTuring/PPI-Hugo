@@ -21,7 +21,7 @@ To make PPI more accessible to different audiences, an online application with a
 
 In some of these steps, you can download the data templates that are necessary to use the model. The PPI online application runs locally, so the data that you load on it will remain in your machine. 
 
-{{% button url="https://oguerr.com/ppiapp/static/media/template_indicators.0555bad5f0a90d084693.xlsx" %}}
+{{% button url="https://oguerr.com/ppiapp/" %}}
 Open the app
 {{% /button %}} 
 
@@ -65,7 +65,7 @@ PPI needs development indicators as one of its inputs. Ideally, you should colle
 
 {{% button url="https://oguerr.com/ppiapp/static/media/template_indicators.0555bad5f0a90d084693.xlsx" %}}
 Download template
-{{% /button %}} 
+{{% /button %}}
 
 Before filling in the indicators template, you need to perform two preprocessing steps that you need to perform to each of your time series. First, all the values need to be re-scaled to be between 0 and 1. This will help the app to calibrate the model faster. This practice is common in development quantitative studies and usually follows the formula:
 
@@ -86,7 +86,7 @@ The column instrumental indicates, with value 1, if there exists a government pr
 
 Finally, columns monitoring and rule_of_law correspond to governance parameters quantifying how good is the monitoring of expenditure and how serious is the rule of law when it comes to punitive measures to correct inefficient practices in the public administration. Both values should be between 0 and 1, with 0 meaning no monitoring and prevalent impunity, while 1 conveys the opposite. While the app allows to specify these values for each indicator, it is often difficult to come across such disaggregated data. Hence, a common practice is to use data from governance indicators such as the ones produced by the World Bank and assume that the same governance structure applies across all policy dimensions. 
 
-
+{{% youtube id="czhB4JaKMy0" %}}
 
  
 {{% /accordion %}}
@@ -97,7 +97,13 @@ Finally, columns monitoring and rule_of_law correspond to governance parameters 
 
 There are two ways in which you can provide information about government expenditure. The first is by entering a total budget amount. This is useful when you do not have information about how the government expenditure is disaggregated. With this level of aggregation, the types of inferences that you can make will be limited to changes in the overall budget size. 
 
-The second option is to provide a file with the budget disaggregated into expenditure programmes using the template provided below. The template is organised in five sheets. The first two sheets (those labelled with the prefix template_) are the ones that you must fill to provide the model with data. The third sheet (labelled metadata) provides detailed explanations of the template columns. The fourth and fifth sheets (those labelled with the prefix example_) have the same structure as the first two sheets, but are filled with synthetic data that you can copy over the first sheets in case you want to try out the app. 
+The second option is to provide a file with the budget disaggregated into expenditure programmes using the template provided below. 
+
+{{% button url="https://oguerr.com/ppiapp/static/media/template_budget.2d66549ef65205a929a2.xlsx" %}}
+Download template
+{{% /button %}} 
+
+The template is organised in five sheets. The first two sheets (those labelled with the prefix template_) are the ones that you must fill to provide the model with data. The third sheet (labelled metadata) provides detailed explanations of the template columns. The fourth and fifth sheets (those labelled with the prefix example_) have the same structure as the first two sheets, but are filled with synthetic data that you can copy over the first sheets in case you want to try out the app. 
 
 In contrast to the indicators data, expenditure does not need to be normalised; just make sure that all the quantities are expressed in positive numbers (zero-valued entries will yield an error message). Sheet template_expenditure has two columns: program_ID and expenditure. Each row in this sheet corresponds to a unique government programme. Now, this does not mean that you must input highly disaggregated data; only that you should provide unique categories under which the budget is distributed. For example, you could provide broad expenditure tranches such as education, social security, and environmental protection; or you could use popular development categorisation schemes such as the Sustainable Development Goals. The important thing to remember is that each entry in column program_ID should be unique, otherwise the app will not validate your data. Finally, in column expenditure, you should fill each entry with the total budget that the government spent in the corresponding programme throughout the sample period of the indicators. In the Python version of the PPI model, you can specify time-varying budgets. This, however, makes the data-preparation process much more complicated. Therefore, a design decision was made for the online app in terms of sacrificing the time dimension in government expenditure. 
 
@@ -105,9 +111,8 @@ Sheet template_relation_table is critical for the correct use of the PPI model, 
 
 Next, still in the template_relation_table sheet, we have the columns labelled program1_ID, program2_ID, …. These columns are there so you can specify the government programmes that are designed to affect each indicator. For example, if the indicator social_security in your data is impacted by programmes 2, 15, and 24, then, in the row with the label social_security, you should fill the column program1_ID with 2, program2_ID with 15, and column program3_ID with 24. The template provides 10 columns for potential programmes affecting each indicator; however, you can add more columns if needed (just follow the same nomenclature starting with the prefix program). Remember that you can only use programme IDs that you have declared in the template_expenditure sheet, otherwise the app will not validate your data. 
 
-{{% button url="https://oguerr.com/ppiapp/static/media/template_indicators.0555bad5f0a90d084693.xlsx" %}}
-Download template
-{{% /button %}} 
+
+{{% youtube id="7ZNv8NpDfes" %}}
  
 {{% /accordion %}}
 
@@ -119,15 +124,17 @@ One of the most important discussions in the sustainable development community i
 
 The template provided in this step of the workflow is organised in three sheets. The first sheet (labelled template_network) is where you must put the information about the interdependencies. The second sheet (labelled metadata) explains each column in the template. The third sheet (labelled example_network) provides an example network corresponding to the example synthetic data from the other two templates. 
 
+{{% button url="https://oguerr.com/ppiapp/static/media/template_network.9dfc7962c63ff28e1953.xlsx" %}}
+Download template
+{{% /button %}} 
+
 To fill in the template_network sheet, you must use all the labels reported in the indicators template (regardless of if they are instrumental or not). You should type those labels in every row of the first column and in every column of the first row, as shown in the example_network sheet. If you leave any indicator out, the app will not validate your data. Each entry in this matrix should be a numeric value indicating the strength of the interdependency. These values can be positive (synergies) or negative (trade-offs). The direction of a link goes from row (the sender) to column (the receiver). 
 
 Where do you get this network from? This is a very important question that is actively discussed in the sustainable development community. The answer depends on the quality of your data and your preferences towards using a particular method for constructing networks. For example, if you have long enough time series, you could use statistical and machine learning methods to estimate the interdependencies between all the indicators. Often, data with such properties are not available, so researchers rely on expert knowledge and organise workshops to elicit responses from sector-specialists who fill in an interdependency matrix. The creators of PPI have published a comprehensive review on many of these methods. Therefore, you should familiarise yourself with the various potential ways in which you could construct these networks. 
 
 Whether you pick a specific network-estimation method or decide to skip this workflow step is entirely up to you. For PPI, the network of interdependencies represents a long-term structural feature that is exogenous to the model, so it is not expected to change in the short run. Since the topology of this network may have properties that are peculiar or specific to a given country or region, accounting for its topology is another way in which the PPI model considers the context specificity of the economy under study. 
 
-{{% button url="https://oguerr.com/ppiapp/static/media/template_indicators.0555bad5f0a90d084693.xlsx" %}}
-Download template
-{{% /button %}} 
+{{% youtube id="j0SitQQMNZA" %}}
  
 {{% /accordion %}}
 
@@ -143,6 +150,9 @@ If you are using the PPI app for the first time, you will not know the values fo
 Once the calibration has finished, these parameter values will be used in the next step of the workflow. You can also download a file with these parameters to fill the alpha, alpha_prime, and beta columns from the indicators template for future use. This means that, if you plan to use the same dataset in the future, by filling the parameter columns you can skip the calibration step and make your analysis more agile. Remember, using the same parameters is valid only is you use the same dataset. 
 
 Finally, the PPI app gives you the option of choosing the quality of the calibration. The higher the quality the more time the calibration takes because it needs to perform more simulations to achieve higher precision. While high quality can be achieved with this app, due to the computational constraints of web browsers, this quality is still below the one that could be achieved with the Python version of the model. Therefore, you should use this app mainly for fast preliminary analyses and use the Python version of the PPI model for more rigorous studies. 
+
+{{% youtube id="NPVzxa4HSMU" %}}
+
 
 {{% /accordion %}}
 
@@ -164,11 +174,16 @@ There is another critical aspect about this step that you need to fully understa
 
 Once you set the number of periods to be simulated, hit the “start simulation” button and wait. The app will present you with three plots summarising the results of your simulation and allowing you to download each one as a high-resolution image. In the background, the app runs a sample of independent simulations and computes their average or representative dynamics. If you wish to perform your own analysis on these average dynamics and create your own plots, the app gives you the option to download them. To get the most out of this tool, make sure to give the indicators intuitive labels and colours that are communicative to your audience. For instance, in the example contained in the indicators template, the colour codes have been chosen according to the Sustainable Development Goals, so the audience familiar with this international agenda can easily interpret the figures generated by the app. 
 
+{{% youtube id="WAB4qy4_ScA" %}}
+
+
+
 {{% /accordion %}}
 
 <div class="pt-4">
 
-{{% button url="https://oguerr.com/ppiapp/static/media/template_indicators.0555bad5f0a90d084693.xlsx" %}}
+
+{{% button url="https://oguerr.com/ppiapp/" %}}
 Run the app
 {{% /button %}} 
 

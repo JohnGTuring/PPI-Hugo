@@ -84,11 +84,29 @@
 
 
 	}
-	
+
+
 	.outer-border{
 		border:1px solid black;
 		margin-bottom:var(--vertical-gutter-padding);
 	}
+
+@media screen and (max-width:600px){
+	.outer-border{
+	
+		border:0px;
+		
+		.row{
+			padding:0px;
+			
+			.ppp-col-12{
+				margin:0px;
+			}
+		}
+	
+	}
+}
+	
 	
 	
 // BUTTONS

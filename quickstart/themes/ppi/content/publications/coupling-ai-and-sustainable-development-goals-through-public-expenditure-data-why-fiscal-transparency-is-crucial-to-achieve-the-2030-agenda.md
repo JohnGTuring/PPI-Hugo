@@ -8,9 +8,8 @@ publication_type = "Dissemination"
 language = ['English']
 
 
-date = 2023-01-15T09:00:00-07:00
+date = 2023-01-28
 draft = false
-tags = ['red']
 +++
 
 Since their establishment in 2015, the Sustainable Development Goals (SDGs) have become the leading international agenda to promote social, economic and environmental development. The 2030 Agenda has encouraged the construction of numerous development indicators through which governments can track and evaluate their progress towards the SDGs.

@@ -5,5 +5,6 @@ url = "www.sztucznainteligencja.org.pl/sztuczna-inteligencja-symuluje-swiat-dla-
 media_source = "Sztuczna Inteligencja"
 language = "pl"
 year = "2020"
+date = "2023-08-22"
 +++
 

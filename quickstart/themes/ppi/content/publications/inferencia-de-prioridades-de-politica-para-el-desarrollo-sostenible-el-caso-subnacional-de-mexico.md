@@ -8,9 +8,8 @@ publication_type = "policy_report"
 language = ['Spanish']
 
 
-date = 2023-01-15T09:00:00-07:00
+date = 2023-01-22
 draft = false
-tags = ['red']
 +++
 
 El tercer documento de esta serie es una aplicación para el caso subnacional de México que da cuenta de las prioridades retrospectivas de las entidades federativas y de los resultados del análisis de factibilidad de metas aportadas por funcionarias y funcionarios públicos de cinco estados: Chiapas, Jalisco, Estado de México, Nuevo León y Yucatán.

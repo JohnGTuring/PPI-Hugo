@@ -5,4 +5,5 @@ url = "www.elmundo.es/papel/historias/2020/08/20/5f3e9c67fdddff9d1e8b4599.html"
 media_source = "El Mundo"
 language = "es"
 year = "2020"
+date = "2023-08-28"
 +++
