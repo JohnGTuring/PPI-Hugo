@@ -1,6 +1,4 @@
-timeout = 30000
-enableInlineShortcodes = true
-
+baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Policy Priority Inference'
 theme = 'ppi'
