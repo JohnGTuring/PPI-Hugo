@@ -956,6 +956,11 @@ $container-max-widths: (
 			.accordion-row-text{
 				padding-bottom: var(--vertical-gutter-padding)!important;			
 
+				.ppp-col-standard{
+					margin-right: var(--half-padding)!important;
+					margin-left: var(--half-padding)!important;
+				}
+
 			}
 			.box-button-container{
 			    bottom: 60px;
