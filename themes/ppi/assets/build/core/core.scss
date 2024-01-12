@@ -956,9 +956,12 @@ $container-max-widths: (
 			.accordion-row-text{
 				padding-bottom: var(--vertical-gutter-padding)!important;			
 
-				.ppp-col-standard{
-					margin-right: var(--half-padding)!important;
-					margin-left: var(--half-padding)!important;
+
+				@media screen and (max-width:600px){
+					.ppp-col-standard{
+						margin-right: var(--half-padding)!important;
+						margin-left: var(--half-padding)!important;
+					}
 				}
 
 			}
