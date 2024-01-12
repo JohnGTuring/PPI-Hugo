@@ -103,17 +103,13 @@
 
 @media screen and (max-width:600px){
 	.outer-border{
-	
 		border:0px;
-		
-		.row{
-			padding:0px;
-			
-			.ppp-col-12{
-				margin:0px;
-			}
-		}
-	
+	}
+	.outer-border > .row {
+		padding:0px;
+	}		
+	.outer-border > .row > .ppp-col-12{
+		margin:0px;
 	}
 }
 	
